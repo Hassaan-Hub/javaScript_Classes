@@ -128,33 +128,85 @@
 // grade as per following table:
 
 
-var subject1 = +prompt("Enter your subject 1 marks")
-var subject2 = +prompt("Enter your subject 2 marks")
-var subject3 = +prompt("Enter your subject 3 marks")
-var totalMarks = +prompt("Enter your total marks")
+// var subject1 = +prompt("Enter your subject 1 marks")
+// var subject2 = +prompt("Enter your subject 2 marks")
+// var subject3 = +prompt("Enter your subject 3 marks")
+// var totalMarks = +prompt("Enter your total marks")
 
-var obtainedMarks = subject1 + subject2 + subject3
-var percentage = (obtainedMarks / totalMarks) * 100
+// var obtainedMarks = subject1 + subject2 + subject3
+// var percentage = (obtainedMarks / totalMarks) * 100
 
-var grad , remark
+// var grade , remark
 
-if(percentage >= 95){
-    grad = "A-one+"
-    remark = "Exelent";
-}else if(percentage >= 80){
-    grad = "A-one"
-    remark = "Exelent"
-}else if(percentage >= 70){
-    grad = "A"
-    remark = "Good"
-}else if (percentage >= 60){
-    grad = "B"
-    remark = "Good"
-}else{
-    grad = "Fail"
-    remark = "Sorry"
-}
+// if(percentage >= 95){
+//     grade = "A-one+"
+//     remark = "Exelent";
+// }else if(percentage >= 80){
+//     grade = "A-one"
+//     remark = "Exelent"
+// }else if(percentage >= 70){
+//     grade = "A"
+//     remark = "Good"
+// }else if (percentage >= 60){
+//     grade = "B"
+//     remark = "You need to improve"
+// }else{
+//     grade = "Fail"
+//     remark = "Sorry"
+// }
 
+// document.write(`<h1>Mark Sheet</h1>`)
+// document.write(`<table border="2">`)
+// document.write(`<tr> <td>Total Marks</td> <td>${totalMarks}</td> </tr>`) 
+// document.write(`<tr> <td>Marks obtained</td> <td>${obtainedMarks}</td> </tr>`)
+// document.write(`<tr> <td>Percentage</td> <td>${percentage}%</td> </tr>`)
+// document.write(`<tr> <td>Grade</td> <td>${grade}</td> </tr>`)
+// document.write(`<tr> <td>Remarks</td> <td>${remark}</td> </tr>`)
+// document.write(`</table>`)
+
+
+
+
+// 7. Guess game:
+// Store a secret number (ranging from 1 to 10) in a variable.
+// Prompt user to guess the secret number.
+// a. If user guesses the same number, show “Bingo! Correct
+// answer”.
+// b. If the guessed number +1 is the secret number, show
+// “Close enough to the correct answer”.
+
+
+// var secretNumber = Math.floor(Math.random() * 10) + 1;
+
+// var userGuess = +prompt("Enter your guess number (between 1 to 10)")
+
+// if(secretNumber === userGuess){
+//     alert("Bingo! Correct")
+// }else{
+//     alert("Close enough to the correct answer")
+// }
+
+
+
+
+// 8. Write a program to check whether the given number is
+// divisible by 3. Show the message to the user if the number
+// is divisible by 3.
+
+
+// var number = +prompt("Enter your number")
+
+// if (number % 3 === 0){
+//     alert(`${number} is divisible by 3..`)
+// }else{
+//     alert(`${number} is not divisible by 3..`)
+// }
+
+
+
+
+// 9. Write a program that checks whether the given input is an
+// even number or an odd number.
 
 
 
