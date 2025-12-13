@@ -135,5 +135,3 @@
 //     alert("please enter between 0 to 2400")
 // }
 
-
-
