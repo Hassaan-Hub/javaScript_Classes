@@ -174,3 +174,23 @@
 // for (var i = 5; i <= 100; i+= 5){
 //     document.write(`${i} `)
 // }
+
+
+
+
+
+
+
+// Sort method:
+// Join method:
+// Split method:
+// Reverse method:
+
+
+
+var arr = [34,54,79,12,92,123,456,765,65];
+
+arr.sort()
+
+console.log(arr);
+
