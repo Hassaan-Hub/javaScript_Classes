@@ -90,81 +90,50 @@
 // football together.”;
 
 
-var message = "Ali and Sami are best friends. They play cricket and football together."
+// var message = "Ali and Sami are best friends. They play cricket and football together."
 
-var rep = message.replaceAll("and" , "&")
+// var rep = message.replaceAll("and" , "&")
 
-console.log(rep);
+// console.log(rep);
 
 
 
 
+// 9. Write a program that converts a string “472” to a number
+// 472. Display the values & types in your browser.
 
 
+// var num = 472;
 
+// var st = num.toString();
 
+// console.log(num,st);
 
 
 
 
+// 10. Write a program that takes user input. Convert and
+// show the input in capital letters.
 
 
+// var user = prompt("Enter your input")
+// var upper = user.toUpperCase()
 
+// document.write(`user input: ${user}<br>`)
+// document.write(`Upper Case: ${upper}`)
 
 
 
 
+// 11. Write a program that takes user input. Convert and
+// show the input in title case
 
 
+// var user = prompt("Enter your input")
 
+// var inp1 = user.slice(0,1).toUpperCase()
+// var inp2 = user.slice(1).toLowerCase()
+// var mg = inp1 + inp2
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// document.write(`user input: ${user}<br>`)
+// document.write(`Title case: ${mg}`)
