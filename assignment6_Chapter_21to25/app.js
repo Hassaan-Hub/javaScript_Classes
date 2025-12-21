@@ -137,3 +137,170 @@
 
 // document.write(`user input: ${user}<br>`)
 // document.write(`Title case: ${mg}`)
+
+
+
+
+// 12. Write a program that converts the variable num to
+// string.
+// var num = 35.36 ;
+// Remove the dot to display “3536” display in your browser.
+
+
+// var num = 35.36;
+// console.log(num);
+// var num1 = num.toString()
+// console.log(num1.replace(".", ""));
+
+
+
+
+// 13. Write a program to take user input and store username
+// in a variable. If the username contains any special symbol
+// among [@ . , !], prompt the user to enter a valid username.
+// For character codes of [@ .
+// Note:
+// ASCII code of ! is 33
+// ASCII code of , is 44
+// ASCII code of . is 46
+// ASCII code of @ is 64
+
+
+// var username = prompt("Enter your username")
+
+// var codes = username.charCodeAt()
+
+// if(codes == 33 || codes == 44 || codes == 46 || codes == 64){
+//     alert("enter a valid username.")
+// }else{
+//     alert(`Hello ${username}`)
+// }
+
+
+
+
+// 14. You have an array
+// A = [cake”, “apple pie”, “cookie”, “chips”, “patties”]
+// Write a program to enable “search by user input” in an
+// array. After searching, prompt the user whether the given
+// item is found in the list or not.
+// Note: Perform case insensitive search. Whether the user
+// enters cookie, Cookie, COOKIE or coOkIE, program
+// should inform about its availability. Example:
+
+
+// var abc = ["cake", "apple pie", "cookie", "chips", "patties"];
+
+// var user = prompt("Welcome to abc bakery. What do you want to eat Sir/Ma'am").toLowerCase()
+
+// var res = abc.includes()
+
+// if (abc.includes(user)){
+//     document.write(`${user} is available at index ${abc.indexOf(user)} in our bakery`)
+// }else{
+//     document.write(`We are sorry. ${user} is <b>not available</b> in our bakery`)
+// }
+
+
+
+
+// 15. Write a program to take password as an input from
+// user. The password must qualify these requirements:
+// a. It should contain alphabets and numbers
+// b. It should not start with a number
+// c. It must at least 6 characters long
+// If the password does not meet above requirements,
+// prompt the user to enter a valid password.
+// For character codes of a-z, A-Z & 0-9, refer to ASCII
+// table at the end of this document
+
+
+// function checkPassword(){
+//     var password = prompt("Enter your valid password!")
+
+//     if(password.length <= 6){
+//         alert("It must at least 6 characters long")
+//         return;
+//     }
+
+//     var nonum = password.charAt(0)
+//     if(!isNaN(nonum)){
+//         alert("It should not start with a number")
+//         return;
+//     }
+
+//     var charAlphabets = /[a-zA-Z]/.test(password)
+//     var passAlphabets = /[0-9]/.test(password)
+
+//     if(!(charAlphabets && passAlphabets)){
+//         alert("It should contain alphabets and numbers")
+//         return;
+//     }
+
+//     alert("Valid Password")
+// }
+
+// checkPassword()
+
+
+
+
+// 16. Write a program to convert the following string to an
+// array using string split method.
+// var university = “University of Karachi”;
+// Display the elements of array in your browser.
+
+
+// var university = "University of Karachi";
+
+// for (let i = 0; i < university.length; i++){
+//     document.write(`${university[i]}<br>`)
+// }
+
+
+
+
+// 17. Write a program to display the last character of a user
+// input.
+
+
+// var user = prompt("Enter your country name")
+
+// document.write(`User input: ${user}<br>Last character of input: ${user.charAt(user.length - 1)}`)
+
+
+
+
+// 18. You have a string “The quick brown fox jumps over the
+// lazy dog”. Write a program to count number of
+// occurrences of word “the” in given string.
+
+
+// var str = "The quick brown fox jumps over the lazy dog"
+
+// str = str.toLowerCase();
+
+// var word = str.split(" ")
+
+// var count = 0;
+
+// for(let i = 0; i < word.length; i++){
+//     if (word[i] === "the"){
+//         count++;
+//     }
+// }
+// document.write(`There are ${count} occurrence(s) of word 'the'`)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
