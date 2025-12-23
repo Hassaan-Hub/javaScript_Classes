@@ -80,6 +80,66 @@
 // chapter 26 Rounding numbers
 
 
+// Math.round()
+// var num = 3.5459
+// var rou = Math.round(num)
+// console.log(rou);                   //  4
+
+// Math.floor()
+// var num = 3.2459
+// var flo = Math.floor(num)
+// console.log(flo);                   //  3
+
+// Math.ceil()
+// var num = 3.23489;
+// var cei = Math.ceil(num)
+// console.log(cei);                   //   4
+
+
+
+
+// chapter 27 Generating random numbers
+
+
+// var ran = (Math.random() * 10) + 1;
+// var flo = Math.floor(ran)
+// console.log(flo);
+
+
+
+
+// chapter 28 Converting strings to integers and decimals
+
+
+// var rol = "2.634"
+// var str = parseInt(rol)             //  2
+// var str1 = parseFloat(rol)          //  2.234
+
+// console.log(str);
+// console.log(str1);
+
+
+
+
+// chapter 29 Converting strings to numbers, numbers to strings
+
+
+// var str = "2.324"
+// var num = Number(str)
+// var num1 = str.toString()
+// console.log(num);
+// console.log(num1);
+
+
+
+
+// chapter 30 Controlling the length of decimals
+
+
+// var num = 2.5687
+// var res = num.toFixed(2)
+// console.log(res);
+
 
 
 
