@@ -174,9 +174,65 @@
 
 
 
+// 12. Write a program that creates a date object and show the
+// date in an alert box that is reset to 100 years back?
+
+
+// var date = new Date("dec 27, 2025")
+// var year = date.getFullYear()
+// var back = (year - 100)
+// var date1 = new Date()
+// console.log(date1);
 
 
 
 
+// 13. Write a program to ask the user about his age. Calculate
+// and show his birth year in your browser
 
 
+// var user = prompt("Enter your age")
+
+// var date = new Date()
+// var dateYear = date.getFullYear()
+// var last = dateYear - user
+// document.write(`Your age ${user}<br>`)
+// document.write(`Your birth year is ${last}`);
+
+
+
+
+// 14. Write a program to generate your K-Electric bill in your
+// browser. All the amounts should be rounded off to 2
+// decimal places. Display the following fields:
+// a. Customer Name
+// b. Current Month
+// c. Number of units
+// d. Charges per unit
+// e. Net Amount Payable (within Due Date)
+// f. Late Payment Surcharge
+// g. Gross Amount Payable (after Due Date)
+// Where,
+
+
+// var name = "HASSAAN"
+// var date = new Date()
+// var month = date.getMonth()
+// var monthNames = [
+//     "jan", "feb", "march", "april", "may", "june", "july", "agust","sep", "oct", "nov","dec"
+// ]
+
+// var numberOfUnits = 410
+// var chargesPerUnit = 16
+// var netAmountPayable = numberOfUnits * chargesPerUnit
+// var latePaymentSurcharge = 350
+// var grossAmountPayable = netAmountPayable + latePaymentSurcharge
+
+// document.write(`<h1>K-Electric Bill</h1><br>`)
+// document.write(`Customer Name: <b>${name}</b><br>`)
+// document.write(`Month: <b>${monthNames[month]}</b><br>`)
+// document.write(`Number of Units: <b>${numberOfUnits}</b><br>`)
+// document.write(`Charges per Unit: <b>${chargesPerUnit}</b><br>`)
+// document.write(`Net Amount Payable (within Due Date): <b>${netAmountPayable}</b><br>`)
+// document.write(`Late Payment Surcharge: <b>${latePaymentSurcharge}</b><br>`)
+// document.write(`Gross Amount Payable (after Due Date): <b>${grossAmountPayable}</b><br>`)
