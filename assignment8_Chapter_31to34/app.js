@@ -222,6 +222,7 @@
 //     "jan", "feb", "march", "april", "may", "june", "july", "agust","sep", "oct", "nov","dec"
 // ]
 
+
 // var numberOfUnits = 410
 // var chargesPerUnit = 16
 // var netAmountPayable = numberOfUnits * chargesPerUnit
