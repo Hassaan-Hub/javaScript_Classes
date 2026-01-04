@@ -108,3 +108,190 @@
 // var final = factorial(4)
 
 // console.log(final);
+
+
+
+
+// 7. Write a function that take start and end number as inputs
+// & display counting in your browser.
+
+
+// function count(start, end){
+//     for (var i = start; i < end; i++){
+//         console.log(i);
+        
+//     }
+// }       
+
+// console.log(count(2,23));
+
+
+
+
+// 8. Write a nested function that computes hypotenuse of a
+// right angle triangle.
+// Hypotenuse2 = Base2 + Perpendicular2
+// Take base and perpendicular as inputs.
+// Outer function : calculateHypotenuse()
+// Inner function: calculateSquare()
+
+
+// function calculateHypotenuse(base, perpendicular){
+
+//     function calculateSquare(num){
+//         return num * num
+//     }
+
+//     var hypotenuse = calculateSquare(base)
+//     var perpendicular = calculateSquare(perpendicular)
+
+//     var Hypotenuse2 = hypotenuse + perpendicular
+
+//     console.log(`'Hypotenuse' is: ${Hypotenuse2}`);
+    
+// }
+
+// calculateHypotenuse(2,2)
+
+
+
+
+// 9. Write a function that calculates the area of a rectangle.
+//  A = width * height
+//  Pass width and height in following manner:
+// i. Arguments as value
+// ii. Arguments as variables
+
+
+// function area(width, height){
+//     var multi = width * height
+//     console.log(multi);
+    
+// }
+// area(5 , 10)
+
+
+// function area(width, height){
+//     return width * height
+// }
+// var result = area(5, 10)
+// console.log(result);
+
+
+
+
+// 10. Write a JavaScript function that checks whether a passed
+// string is palindrome or not?
+// A palindrome is word, phrase, or sequence that reads the same backward as
+// forward, e.g., madam.
+
+
+// var userValue = prompt("Enter value")
+
+// function palindromeWord(value){
+
+//     var word = value.split(" ").reverse().join()
+
+//     switch (word == value) {
+//         case value == word:
+//             console.log(`${userValue}. its palindrome word`)
+//             break;
+    
+//         default:
+//             console.log(`${userValue}. its not palindrome word`)
+//             break;
+//     }
+//     return value
+// }
+// palindromeWord(userValue)
+
+
+
+
+// 11. Write a JavaScript function that accepts a string as a
+// parameter and converts the first letter of each word of the
+// string in upper case.
+// EXAMPLE STRING : 'the quick brown fox'
+// EXPECTED OUTPUT : 'The Quick Brown Fox'
+
+
+// var user = prompt("Enter your text..")
+
+// function upper(value){
+//     var words = value.split(" ")
+
+//     for(var i = 0; i < words.length; i++){
+//         words[i] = words[i][0].toUpperCase() + words[i].slice(1)
+//     }
+//     return words.join(" ");
+// }
+// var result = upper(user)
+// console.log(result);
+
+
+
+
+// 12. Write a JavaScript function that accepts a string as a
+// parameter and find the longest word within the string.
+// EXAMPLE STRING : 'Web Development Tutorial'
+// EXPECTED OUTPUT : 'Development'
+
+
+// function long(value){
+//     var words = value.split(" ")
+//     var longest = ""
+
+//     for(var i = 0; i < words.length; i++){
+//         if(words[i].length > longest.length){
+//             longest = words[i];
+//         }
+//     }
+//     return longest;
+// }
+// var rsult = long("Web Development Tutorial")
+// console.log(rsult);
+
+
+
+
+// 13. Write a JavaScript function that accepts two arguments, a
+// string and a letter and the function will count the number of
+// occurrences of the specified letter within the string.
+// Sample arguments : 'JSResourceS.com', 'o'
+
+
+// function countLetter(str, letter){
+//     var count = 0;
+
+//     for (var i = 0; i < str.length; i++){
+//         if (str[i] == letter){
+//             count++
+//         }
+//     }
+//     return count;
+// }
+// var result = countLetter("JSResourceS.com", "o")
+// console.log(result);
+
+
+
+
+// 14. The Geometrizer
+// Create 2 functions that calculate properties of a circle, using
+// the definitions here.
+// Create a function called calcCircumference:
+// • Pass the radius to the function.
+// • Calculate the circumference based on the radius, and output
+// "The circumference is NN".
+// Create a function called calcArea:
+// • Pass the radius to the function.
+// • Calculate the area based on the radius, and output "The area
+// is NN".
+// Circumference of circle = 2πr
+// Area of circle = πr2
+
+
+
+
+
+
