@@ -291,7 +291,18 @@
 // Area of circle = πr2
 
 
+// function calcCircumference(radius){
+//     var circumference = 2 * Math.PI * radius;
+    
+//     console.log(`The Circumference is: ${circumference.toFixed(2)}`);
+// }
 
+// function calcArea(radius){
+//     var area = Math.PI * radius * radius;
 
+//     console.log(`The Area is: ${area.toFixed(2)}`);
+// }
 
-
+// var result = 7;
+// calcCircumference(result)
+// calcArea(result)
