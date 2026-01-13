@@ -235,10 +235,10 @@
 
 // function calculateOvertimePay(hour){
 //     var overtimeRate =  12.00;
-//     var overtimeHours = hour - 8;
+//     var overtimeHours = hour;
 
-//     if(overtimeHours > 0){
-//         return overtimeHours * overtimeRate
+//     if(overtimeHours > 40){
+//         return (overtimeHours - 40) * overtimeRate
 //     }else{
 //         return 0;
 //     } 
