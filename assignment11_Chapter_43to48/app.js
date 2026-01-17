@@ -50,17 +50,17 @@
 // value in browser.
 
 
-var count = 0;
+// var count = 0;
 
-function counterIncrease(){
-    count++;
-    document.getElementById("counter").innerHTML = count;
-}
+// function counterIncrease(){
+//     count++;
+//     document.getElementById("counter").innerHTML = count;
+// }
 
-function counterDecrease(){
-    count--;
-    document.getElementById("counter").innerHTML = count;
-}
+// function counterDecrease(){
+//     count--;
+//     document.getElementById("counter").innerHTML = count;
+// }
 
 
 
