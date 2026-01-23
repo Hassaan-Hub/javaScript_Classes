@@ -16,21 +16,21 @@
 // displayed.
 
 
-function readMore() {
-    var show = document.getElementById("showText")
-    var hide = document.getElementById("hideText")
-    var btn = document.getElementById("btnReadMore")
+// function readMore() {
+//     var show = document.getElementById("showText")
+//     var hide = document.getElementById("hideText")
+//     var btn = document.getElementById("btnReadMore")
 
-    if(hide.style.display === "none"){
-        hide.style.display = "block"
-        show.style.display = "none"
-        btn.innerHTML = "Read Less"
-    }else{
-        show.style.display = "block"
-        hide.style.display = "none"
-        btn.innerHTML = "Read More"
-    }
-}
+//     if(hide.style.display === "none"){
+//         hide.style.display = "block"
+//         show.style.display = "none"
+//         btn.innerHTML = "Read Less"
+//     }else{
+//         show.style.display = "block"
+//         hide.style.display = "none"
+//         btn.innerHTML = "Read More"
+//     }
+// }
 
 
 
