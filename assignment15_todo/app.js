@@ -16,7 +16,6 @@ function addTodo(){
     delBtn.setAttribute("onclick", "delBtn()")
     editBtn.setAttribute("onclick", "editBtn(this)")
 
-    
     li.appendChild(liText)
     delBtn.appendChild(delBtnText)
     editBtn.appendChild(editBtnText)
