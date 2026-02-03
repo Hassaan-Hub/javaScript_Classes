@@ -88,6 +88,7 @@ var products = {
 var main = document.getElementById("cards");
 
 var proMain1 = document.createElement("div");
+proMain1.id = "cars";
 proMain1.style.display = "flex";
 proMain1.style.flexWrap = "wrap";
 proMain1.style.justifyContent = "space-around";
@@ -175,6 +176,7 @@ main.appendChild(proMain1);
 // -------------------------------------------------------------------- bikes products.
 // 2 first card
 var proMain2 = document.createElement("div");
+proMain2.id = "bikes";
 proMain2.style.display = "flex";
 proMain2.style.flexWrap = "wrap";
 proMain2.style.justifyContent = "space-around";
@@ -263,6 +265,7 @@ main.appendChild(proMain2);
 // -------------------------------------------------------------------- phones products.
 // 3 first card
 var proMain3 = document.createElement("div");
+proMain3.id = "phones";
 proMain3.style.display = "flex";
 proMain3.style.flexWrap = "wrap";
 proMain3.style.justifyContent = "space-around";
@@ -353,6 +356,7 @@ main.appendChild(proMain3);
 // -------------------------------------------------------------------- laptops products.
 // 4 first card
 var proMain4 = document.createElement("div");
+proMain4.id = "laptops"; 
 proMain4.style.display = "flex";
 proMain4.style.flexWrap = "wrap";
 proMain4.style.justifyContent = "space-around";
@@ -439,3 +443,35 @@ main.appendChild(proMain4);
 
 
 
+
+// ---------------------------------------------------- category filter code.
+var select = document.getElementById("categorySelect")
+
+select.addEventListener("change", function (){
+    var value = this.value
+
+    var cars = document.getElementById("cars")
+    var bikes = document.getElementById("bikes")
+    var phones = document.getElementById("phones")
+    var laptops = document.getElementById("laptops")
+
+    cars.style.display = "none"
+    bikes.style.display = "none"
+    phones.style.display = "none"
+    laptops.style.display = "none"
+
+    if(value == "all"){
+        cars.style.display = "flex"
+        bikes.style.display = "flex"
+        phones.style.display = "flex"
+        laptops.style.display = "flex"
+    }else if(value == "cars"){
+        cars.style.display = "flex"
+    }else if(value == "bikes"){
+        bikes.style.display = "flex"
+    }else if(value == "phones"){
+        phones.style.display = "flex"
+    }else if(value == "laptops"){
+        laptops.style.display = "flex"
+    }
+})
