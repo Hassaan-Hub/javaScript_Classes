@@ -37,7 +37,7 @@ function login() {
         currentUser = user
         postSection.style.display = "block"
         alert("Login Success")
-        showPost()
+        showPosts()
     } else {
         alert("enter valid email & password")
     }
@@ -54,6 +54,14 @@ function dateTime() {
     return `${month}/${daye}/${year} : ${hour}:${minute} ${ampam}`
 }
 
-var get = dateTime()
-console.log(get);
+function addPost() {
+    posts.push({
+        id: dateTime(),
+        text: postInput.value
+    })
+    postInput.value = ""
+    showPosts()
+}
+
+
 
