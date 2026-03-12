@@ -6,19 +6,19 @@ var currentUser = null;
 function signup() {
     if (name.value && email.value && password.value) {
         alert("Please fill all the fields")
-    }else {
+    } else {
         let existingUser = users.find(u => u.email.value === email.value)
-        
-        if(existingUser){
+
+        if (existingUser) {
             alert("already exist this email try a new email")
-        }else{
+        } else {
             users.push({
                 name: name.value,
                 email: email.value,
                 password: pass.value
             })
             alert("signup succes")
-            
+
             name.value = ""
             email.value = ""
             pass.value = ""
@@ -43,5 +43,17 @@ function login() {
     }
 }
 
+function dateTime() {
+    var date = new Date()
+    var daye = String(date.getDate()).padStart(2, '0');
+    var month = String(date.getMonth() + 1).padStart(2, '0');
+    var year = date.getFullYear();
+    var hour = date.getHours();
+    var minute = String(date.getMinutes()).padStart(2, '0')
+    var ampam = hour >= 12 ? "PM" : "AM"; hour = hour % 12 || 12;
+    return `${month}/${daye}/${year} : ${hour}:${minute} ${ampam}`
+}
 
+var get = dateTime()
+console.log(get);
 
