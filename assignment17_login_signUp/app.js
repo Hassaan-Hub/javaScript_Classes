@@ -1,3 +1,5 @@
+const { createElement } = require("react");
+
 var users = [];
 var posts = [];
 var currentUser = null;
@@ -64,4 +66,23 @@ function addPost() {
 }
 
 
+function showPosts(){
+    var postsDiv = document.getElementById("posts")
 
+    posts.forEach(p =>{
+        var box = document.createElement("div");
+
+        // post Date & Time
+        var id = document.createElement("p")
+        id.innerText = p.id;
+
+        // post text
+        var text = document.createElement("p")
+        text.innerText = p.text;
+
+        // delete button
+        var delBtn = document.createElement("button")
+        delBtn.innerText = "Delete";
+        
+    })
+}
