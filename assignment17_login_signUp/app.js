@@ -1,5 +1,3 @@
-const { createElement } = require("react");
-
 var users = [];
 var posts = [];
 var currentUser = null;
@@ -68,6 +66,7 @@ function addPost() {
 
 function showPosts(){
     var postsDiv = document.getElementById("posts")
+    postsDiv.innerHTML = ""
 
     posts.forEach(p =>{
         var box = document.createElement("div");
@@ -84,5 +83,29 @@ function showPosts(){
         var delBtn = document.createElement("button")
         delBtn.innerText = "Delete";
         
+        delBtn.onclick = function(){
+            posts = posts.filter(x => x.id !== p.id)
+            showPosts()
+        }
+
+        // Edit button
+        var ediBtn = document.createElement("button");
+        ediBtn.innerText = "Edit"
+
+        ediBtn.onclick = function() {
+            var newText = prompt("Edit Post:")
+            if(newText){
+                p.text = newText;
+                p.id = dateTime()
+                showPosts()
+            }
+        }
+        box.appendChild(id)
+        box.appendChild(text)
+        box.appendChild(delBtn)
+        box.appendChild(ediBtn)
+        
+        // post container
+        postsDiv.appendChild(box)
     })
 }
