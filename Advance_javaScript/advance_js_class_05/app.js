@@ -51,10 +51,10 @@
 
 //  --------- Modules ----------
 
-import { account, sum } from "./constent.js";
+// import { account, sum } from "./constent.js";
 
-console.log(account);
-console.log(sum(2, 6));
+// console.log(account);
+// console.log(sum(2, 6));
 
 
 //  --------- Higher-order function ----------
