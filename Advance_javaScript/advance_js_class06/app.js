@@ -86,6 +86,23 @@
 
 // =========== Api integration ==========
 
+let body = document.querySelector("body");
+let mode = document.getElementById("mode");
+
+let currMode = "light"
+
+mode.addEventListener("click" , ()=>{
+    if (currMode === "light"){
+        currMode = "dark"
+        body.classList.add("dark")
+        body.classList.remove("light")
+    }else{
+        currMode = "light"
+        body.classList.add("light")
+        body.classList.remove("dark")
+    }
+    console.log(currMode);
+})
 
 fetch("https://jsonplaceholder.typicode.com/users")
     .then((data) => {
@@ -103,6 +120,7 @@ fetch("https://jsonplaceholder.typicode.com/users")
                     <h3>${val.phone}</h3>
                 </div>
             `
+
         });
     })
     .catch((err) => {
