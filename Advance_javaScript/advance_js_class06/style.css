@@ -1,0 +1,37 @@
+#users {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    width: 250px;
+    text-align: center;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.dark {
+    background-color: #000000;
+    color: #fff;
+    transition: all ease 1s;
+}
+
+.light {
+    background-color: #fff;
+    color: #333;
+    transition: all ease 1s;
+}
+
+.blue {
+    background-color: #002293;
+    color: #ffffff;
+    transition: all ease 1s;
+}

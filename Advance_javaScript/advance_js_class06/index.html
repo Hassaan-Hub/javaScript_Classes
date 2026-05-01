@@ -1,46 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>advance_js_class06</title>
-    <style>
-        #users {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-        .card {
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            padding: 16px;
-            width: 250px;
-            text-align: center;
-        }
-        .card-img {
-            width: 100%;
-            height: auto;
-            border-radius: 50%;
-        }
-
-        .dark{
-            background-color: #333;
-            color: #fff;
-            transition: all ease 1s;
-        }
-
-        .light{
-            background-color: #fff;
-            color: #333;
-            transition: all ease 1s;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <h1>advance_js_class06</h1>
 
-    <button id="mode">mode change</button>
+    <!-- <button id="mode">mode change</button> -->
+
+
+    <select id="theme">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+        <option value="blue">Blue</option>
+    </select>
     <div id="users"></div>
 </body>
 <script src="app.js"></script>
+
 </html>
