@@ -86,22 +86,22 @@ class student{
 // console.log(res);
 
 // let res = arr.find((val, idx)=>{
-//   // console.log(val, idx);
+// //   console.log(val, idx);
 //   return typeof val == "string"
 // })
 
 // console.log(res);
 
 // let res = arr.some((val, idx)=>{
-//   return val == "world"
+//   return val == "world"     //  false
 // })
-
 // console.log(res);
+
 // let res = arr.every((val, idx)=>{
 //   return typeof val == "string"
 // })
-
 // console.log(res);
+
 
 // let arr = ["hello", 123, "smit", false, "hello"]
 
@@ -112,11 +112,11 @@ class student{
 // var num = [1, 2, 4, 6, 8, 9]
 
 // let data = num.reduce((a , b) => {
-//   // console.log(i);
+// //   console.log(a + b);
 //   return a + b
 // })
-
 // console.log(data);
+
 
 // 1. 1 + 2 = 3
 // 2. 3 + 4 = 7
