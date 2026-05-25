@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    background-image: url("https://thumbs.dreamstime.com/b/wide-angle-view-lit-football-stadium-interior-expansive-shot-illuminated-showcasing-green-playing-field-packed-stands-380699665.jpg");
+    background-size: cover;
+}
+
+
+
+.main{
+    width: clamp(70px, 10vw, 100px);
+    height: clamp(70px, 10vw, 100px);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 1px;
+}
+
+
+.player{
+    position: absolute;
+    bottom: 10px;
+}
