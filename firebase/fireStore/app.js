@@ -33,21 +33,21 @@ submit.addEventListener("click", async () => {
     try {
         const userCredential = await createUserWithEmailAndPassword(
             auth,
-            email.value.trim(),
-            password.value.trim()
-        );
-
+            email.value,
+            password.value
+        )
         const user = userCredential.user;
-
+        
         await setDoc(doc(db, "users", user.uid), {
-            name: name.value.trim(),
-            number: number.value.trim(),
-            email: email.value.trim()
+            name: name.value,
+            number: number.value,
+            email: email.value
         });
+        console.log("User created + Firestore data saved");
 
-        console.log("✅ User created + Firestore data saved");
-
-    } catch (error) {
-        console.log("❌ Error:", error.code, error.message);
     }
-});
+    catch (error) {
+        const errorMessage = error.message;
+        console.log(errorMessage);
+    };
+})
