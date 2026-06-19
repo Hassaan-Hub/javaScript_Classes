@@ -41,7 +41,8 @@ submit.addEventListener("click", async () => {
         await setDoc(doc(db, "users", user.uid), {
             name: name.value,
             number: number.value,
-            email: email.value
+            email: email.value,
+            id: user.uid
         });
         console.log("User created + Firestore data saved");
 
