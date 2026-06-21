@@ -10,7 +10,8 @@ import {
 import {
   getFirestore,
   doc,
-  setDoc
+  setDoc,
+  serverTimestamp 
 }
   from
   "https://www.gstatic.com/firebasejs/12.15.0/firebase-firestore.js";
@@ -54,7 +55,8 @@ submitBtn.addEventListener('click', async () => {
       number: number.value,
       email: email.value,
       password: password.value,
-      userUid: user.uid
+      userUid: user.uid,
+      timestamp: serverTimestamp()
     });
     console.log('user created plus firestore data saved');
   } catch (error) {
