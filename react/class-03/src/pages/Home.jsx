@@ -4,7 +4,7 @@ import Links from '../component/links/Links'
 const Home = () => {
   return (
     <div>
-      <h1>Home</h1>
+      <h1>Home page</h1>
       <Links />
     </div>
   )
