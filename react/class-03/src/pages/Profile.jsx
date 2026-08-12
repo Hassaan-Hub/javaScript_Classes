@@ -6,7 +6,6 @@ const Profile = () => {
 
   const { username } = useParams();
   const {state} = useLocation();
-  
 
   return (
     <div className='p-2'>
