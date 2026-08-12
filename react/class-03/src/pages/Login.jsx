@@ -1,18 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 const Login = () => {
   const navigate = useNavigate();
 
+  const [name, setName] = useState("")
   const signinFunction = () =>{
-    navigate("/about");
+    navigate("/profile/addusername", {
+      state:{
+        name: name,
+      }
+    });
   }
 
   return (
     <div>
       <h1>Login page</h1>
-
-      <button onClick={signinFunction}>sign in</button>
+      <input className='border-2 my-3 active:border-amber-500' type="text" value={name} onChange={(e)=>{
+        setName(e.target.value);
+      }} /><br />
+      <button className='border-2 px-2' onClick={()=>{
+        setName()        
+        signinFunction();
+      }}>sign in</button>
     </div>
   )
 }

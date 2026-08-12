@@ -5,6 +5,7 @@ import About from '../pages/About'
 import Content from '../pages/Content'
 import Login from '../pages/Login'
 import Profile from '../pages/Profile'
+import NotFound from '../pages/NotFound'
 
 const AppRounter = () => {
     
@@ -20,7 +21,9 @@ const AppRounter = () => {
 
                     <Route path='/login' element={<Login />}></Route>
 
-                    <Route path='/profile' element={<Profile />}></Route>
+                    <Route path='/profile/:username' element={<Profile />}></Route>
+                    
+                    <Route path='/*' element={<NotFound />}></Route>
                 </Routes>
             </BrowserRouter>
         </div>
