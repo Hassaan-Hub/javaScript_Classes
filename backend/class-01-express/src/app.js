@@ -12,6 +12,7 @@ app.post('/', (req, res)=>{
     res.status(201).json({
         message: "users add successfully"
     })
+    
 })
 
 app.get('/', (req, res) => {
