@@ -4,13 +4,13 @@ const createPost = require('./routes/createPost.controller.js');
 const updatePost = require('./routes/updatePost.controller.js');
 const deletePost = require('./routes/deletePost.controller.js');
 
-const app = express();
+const post = express();
 
-app.use(express.json());
+post.use(express.json());
 
-app.get('/posts', getAllPost);
-app.post('/posts', createPost);
-app.delete('/posts/:id', deletePost);
-app.put('/posts/:id', updatePost);
+post.get('/posts', getAllPost);
+post.post('/posts', createPost);
+post.delete('/posts/:id', deletePost);
+post.put('/posts/:id', updatePost);
 
-module.exports = app;
+module.exports = post;
