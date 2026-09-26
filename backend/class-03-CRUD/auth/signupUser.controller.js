@@ -1,6 +1,7 @@
 const Joi = require("joi");
 const User = require("../config/auth.model");
 const bcrypt = require('bcrypt');
+const jwt = require("jsonwebtoken");
 
 const schema = Joi.object({
     username: Joi.string().min(3).max(30).required(),
@@ -26,7 +27,15 @@ const signupUser = async (req, res) => {
             password: hashPassword,
             phone
         })
-        return res.status(201).json({ status: 201, message: "User register successfully", data: createUser })
+
+        const token = jwt.sign({ userId: createUser._id }, process.env.JWT_SECRET_KEY, { expiresIn: "1h" })
+
+        return res.status(201).json({
+            status: 201,
+            message: "User register successfully",
+            data: createUser,
+            token
+        })
     } catch (error) {
         return res.status(500).json({
             status: 500,

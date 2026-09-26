@@ -1,5 +1,6 @@
 const bcrypt = require('bcrypt');
 const User = require('../config/auth.model');
+const jwt = require('jsonwebtoken')
 
 const loginUser = async (req, res) => {
     try {
@@ -14,8 +15,8 @@ const loginUser = async (req, res) => {
         const existedUser = await User.findOne({ email })
         // delete method but not professional
         // .then(res => res.toObject())
-        
-        if(!existedUser){
+
+        if (!existedUser) {
             return res.status(401).json({
                 status: 401,
                 message: "email not found",
@@ -24,7 +25,7 @@ const loginUser = async (req, res) => {
 
         const passwordMatch = await bcrypt.compare(password, existedUser.password)
 
-        if(!passwordMatch){
+        if (!passwordMatch) {
             return res.status(401).json({
                 status: 401,
                 message: "password not match",
@@ -37,8 +38,15 @@ const loginUser = async (req, res) => {
 
         // 👉 delete method professional 
         const isLoggedInUser = await User.findById(existedUser._id).select("-password -username -phone");
-        
-        return res.status(201).json({ status: 201, message: "User register successfully", data: isLoggedInUser })
+
+        const token = jwt.sign({ userId: isLoggedInUser._id, email: isLoggedInUser.email }, process.env.JWT_SECRET_KEY, { expiresIn: "1h" })
+
+        return res.status(201).json({
+            status: 201,
+            message: "User register successfully",
+            data: isLoggedInUser,
+            token
+        })
     } catch (error) {
         return res.status(500).json({
             status: 500,
