@@ -1,5 +1,5 @@
 require('dotenv').config();
-
+const { default: chalk } = require('chalk');
 const express = require('express');
 const connectDB = require('./config/db');
 const post = require('./src/app');
@@ -13,5 +13,5 @@ app.use('/', authRouter);
 connectDB();
 
 app.listen(process.env.PORT, () => {
-    console.log(`Server is running on port ${process.env.PORT}`);
+    console.log(chalk.blueBright(`Server is running on port ${process.env.PORT}`));
 });
